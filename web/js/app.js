@@ -144,12 +144,12 @@ class App extends React.Component {
       if (config.scripts) {
         util.loadScipts(config.scripts);
       }
-      if (config.features.googleTagManager) {
-        googleTagManager.init(config.features.googleTagManager.id); // Insert google tag manager
-        if (!/localhost/.test(window.location.href)) {
-          getIpAddress();
-        }
-      }
+      // if (config.features.googleTagManager) {
+      //   googleTagManager.init(config.features.googleTagManager.id); // Insert google tag manager
+      //   if (!/localhost/.test(window.location.href)) {
+      //     getIpAddress();
+      //   }
+      // }
 
       // Console notifications
       if (Brand.release()) {
